@@ -1,0 +1,18 @@
+#sam1{
+    width: 300px;
+    border-radius: 50px;
+    float: inline-start;
+    margin-right: 50px;
+    
+
+}
+#sam2{
+    width: 300px;
+    border-radius: 50px;
+    float: inline-start;
+    margin-right: 50px;
+
+}
+body{
+    background-color:antiquewhite;
+}
