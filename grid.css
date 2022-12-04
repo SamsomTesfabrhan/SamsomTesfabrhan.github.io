@@ -29,9 +29,9 @@ header{
   }
   #content{
     grid-area: c;
-     width: 100%;
-      display: flex;
-      
+    display: grid;
+    grid-template-areas: 
+     'd1 d2 d3'
   }
   #content > div {
     padding-top: 2%;
@@ -41,20 +41,22 @@ header{
   }
   
   .d1{
-    grid-area: d1;  
+      grid-area: d1;  
       background-color: rgb(126, 126, 136);
-      width: 33.3%;
+      min-height: 50px;
+     
   }
   .d2{
-    grid-area: d2;
-     
+      grid-area: d2;
       background-color: rgb(173, 173, 187);
-      width: 33.3%;
+      min-height: 50px;
   }
   .d3{
-    grid-area: d3;
+     grid-area: d3;
       background-color: rgb(126, 126, 136);
-      width: 33.3%;
+      min-height: 50px;
+
+     
       
   }
   footer{
@@ -76,14 +78,11 @@ header{
      'f f f';
   }
   @media screen and (max-width: 600px) {
-    body{
+    #content{
       display: grid;
       grid-template-areas: 
-       'h h h'
-       'n n n'
-       'd1 d2 d3'
-       'd3 d3 d3'
-       'f f f';
+       'd1 d2'
+       'd3 d3'
     }
       
   }
