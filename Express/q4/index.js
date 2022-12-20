@@ -53,6 +53,6 @@ app.get('/output', (req,res) => {
     res.send(`Welcome ${name} with age ${age}`);
 });
 
-app.listen(3000, () => {
+app.listen(9000, () => {
     console.log('App running on port 3000');
 })
